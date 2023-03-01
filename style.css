@@ -1,0 +1,381 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px white solid; */
+}
+
+:root{
+    --main-color: #ff702a;
+    --bg-color: #1e1c2a;
+    --big-font: 4rem;
+}
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+body{
+    background-color: var(--bg-color);
+    color: #fff;
+    border-color: aqua;
+    border-width: 2px;
+    position: relative;
+    padding-top: 3rem;
+}
+
+/* ----- Hearder ----- */
+
+header, nav, ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    padding: 0 4rem;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    z-index: 999;
+}
+header .logo{
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+.bx.bx-menu, .bx.bx-x{
+    display: none;
+}
+nav ul li{
+    margin: .5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+/* ---- Home Section ---- */
+#home{
+    padding: 70px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    align-items:center;
+}
+#home img{
+    width: 400px;
+    height: auto;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    color: var(--main-color);
+}
+.home-text h2{
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+button{
+    margin: 5px 0;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.2) translateY(5px);
+    transition: .4s;
+}
+
+/* ---- AboutUs Section ---- */
+#aboutus{
+    padding: 70px 5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+}
+.aboutus-text{
+    padding: 3rem 1rem;
+}
+.aboutus-text span,h2,p,button{
+    margin: .5rem 0;
+}
+.aboutus-text span{
+    color: var(--main-color);
+}
+
+/* ---- Food Menu ---- */
+
+#fmenu{
+    margin-bottom: 2rem;
+}
+.fmenu-text{
+    text-align: center;
+}
+.fmenu-text span{
+    color: var(--main-color);
+}
+.menu{
+    margin: 1rem 0;
+    padding: 1rem 5rem;
+    border-color: red;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.items img{
+    width: 10rem;
+}
+.items{
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #feeee7;
+    color: var(--bg-color);
+}
+.items .bx{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--main-color);
+    border-radius: 0 10px 0 10px;
+    padding: 10px;
+}
+.items .desc{
+    font-weight: 300;
+    font-size: 12px;
+}
+.items .price{
+    color: var(--main-color);
+    font-size: none;
+    font-weight: 500;
+}
+
+/* ---- Services ---- */
+#services{
+    padding-top: 3rem;
+}
+.s-text{
+    text-align: center;
+}
+.s-text span{
+    color: var(--main-color);
+}
+.s img{
+    width: 5rem;
+}
+.service-container{
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+    gap: 1rem;
+}
+.s{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.s p{
+    font-size: 12px;
+    font-weight: 300;
+}
+.s span{
+    color: var(--main-color);
+}
+
+/* ---- Contact ---- */
+#contact{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+#contact div{
+    width: 70%;
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #feeee7;
+    color: var(--bg-color);
+    border-radius: 10px;
+}
+
+/* ---- Footer ---- */
+footer{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+footer hr{
+    border-color: var(--main-color);
+    border-width: 1px;
+}
+footer ul{
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    color: grey;
+}
+footer li{
+    margin: 10px 0;
+    cursor: pointer;
+}
+.social-links li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.social-links i{
+    font-size: 30px;
+    border-radius: 10px;
+}
+footer li:hover{
+    color: #fff;
+    transform: scale(1) translateX(-10px);
+    transition: .4s;
+}
+
+
+/* ---- Responsive Code ---- */
+
+@media(max-width:770px) and (min-width:380px){
+    header .logo{
+        font-size: 2rem;
+    }
+    header li{
+        margin: .5rem;
+    }
+    #home{
+        padding:3rem 4rem .5rem 4rem;
+        grid-gap: 1rem;
+    }
+    #home img{
+        width: 300px;
+    }
+    .home-text h1{
+        font-size: 2.5rem;
+    }
+    .home-text h2{
+        font-size: 1rem;
+    }
+    #aboutus{
+        align-items: center;
+    }
+    .aboutus img{
+        width: 300px;
+    }
+}
+
+@media(max-width: 425px){
+    header{
+        padding: 0 2rem;
+        justify-content: space-between;
+    }
+    header .logo{
+        font-size: 1rem;
+    }
+    header .bx.bx-menu{
+        display: block;
+        z-index: 99;
+    }
+    header nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bg-color);
+        justify-content: center;
+        transition: all .4s linear;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .active nav{
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    .active .bx.bx-menu{
+        display: none;
+    }
+    .active .bx.bx-x{
+        display: block;
+        z-index: 99;
+    }
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    #home{
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        justify-content: center;
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
+    .home-text h2{
+        font-size: .7rem;
+    }
+    #home img{
+        width: 250px;
+    }
+    #aboutus{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    #aboutus img{
+        width: 250px;
+    }
+    .aboutus-text{
+        padding: 1rem;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .s{
+        width: 250px;
+    }
+    .service-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+    #contact div{
+        width: 90%;
+        padding: 20px 0;
+        font-size: 14px;
+    }
+    #contact div button{
+        margin: 5px;
+    }
+    footer{
+        padding: 2rem .5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">FOODIES</a>
+        <i class='bx bx-menu' name="openMenu" style='color:#ffffff'  ></i>
+        <i class='bx bx-x' name="closeMenu" style='color:#ffffff'  ></i>
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="nav-item" onclick="hideNavbar()" href="#home">Home</a></li>
+                <li><a class="nav-item" onclick="hideNavbar()" href="#aboutus">About</a></li>
+                <li><a class="nav-item" onclick="hideNavbar()" href="#fmenu">Menu</a></li>
+                <li><a class="nav-item" onclick="hideNavbar()" href="#services">Service</a></li>
+                <li><a class="nav-item" onclick="hideNavbar()" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="home-text">
+            <h1>Food Website</h1>
+            <h2>Food is the precious thing</h2>
+            <button>Todays Menu</button>
+        </div>
+        <img src="img/home.png">
+    </section>
+    <section id="aboutus">
+        <img src="img/about.png">
+        <div class="aboutus-text">
+            <span>About Us</span>
+            <h2>We speak the good <br>food language</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore officia voluptates corrupti consequatur voluptatem, blanditiis perferendis quam corporis incidunt.</p>
+            <button>Learn More</button>
+        </div>
+    </section>
+    <section id="fmenu">
+        <div class="fmenu-text">
+            <span>Food Menu</span>
+            <h1>Fresh taste & Great price</h1>
+        </div>
+        <div class="menu">
+            <div class="items">
+                <i class='bx bx-cart-alt' style='color:#ffffff'  ></i>
+                <img src="img/food1.png" >
+                <h3>Chicken Burger</h3>
+                <span class="desc">Tasty Food</span>
+                <Span class="price">$11.00</Span>
+            </div>
+            <div class="items">
+                <i class='bx bx-cart-alt' style='color:#ffffff'  ></i>
+                <img src="img/food2.png" >                   
+                <h3>Special Beef Burger</h3>
+                <span class="desc">Tasty Food</span>
+                <Span class="price">$11.00</Span>
+            </div>
+            <div class="items">
+                <i class='bx bx-cart-alt' style='color:#ffffff'  ></i>
+                <img src="img/food3.png" >                   
+                <h3>Chicken Fry Pack</h3>
+                <span class="desc">Tasty Food</span>
+                <Span class="price">$11.00</Span>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="s-text">
+            <span>Services</span>
+            <h2>We provide best quality food</h2>
+        </div>
+        <div class="service-container">
+            <div class="s">
+                <img src="img/s1.png" >
+                <span>Order</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi a reiciendis molestiae eligendi illum eius voluptatibus ipsam atque provident eveniet?</p>
+            </div>
+            <div class="s">
+                <img src="img/s2.png" >
+                <span>Shipping</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi a reiciendis molestiae eligendi illum eius voluptatibus ipsam atque provident eveniet?</p>
+            </div>
+            <div class="s">
+                <img src="img/s3.png" >
+                <span>Delivered</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi a reiciendis molestiae eligendi illum eius voluptatibus ipsam atque provident eveniet?</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div>
+            <h2>We make quality food <br>Everyday</h2>
+            <button>Let's Talk</button>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h4>Menu Links</h4>
+            <hr>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Menu</li>
+                <li>Service</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Our Services</h4>
+            <hr>
+            <ul>
+                <li>Web Design</li>
+                <li>Web Development</li>
+                <li>Graphic Design</li>
+                <li>Marketing</li>
+                <li>Product Mangement</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Information</h4>
+            <hr>
+            <ul>
+                <li>About Us</li>
+                <li>Delivery information</li>
+                <li>Privacy policy</li>
+                <li>Terms & Contitions</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Connect With Us</h4>
+            <hr>
+            <ul class="social-links">
+                <li>
+                    <i class='bx bxl-instagram'></i>
+                    <span>Instagram</span>
+                </li>
+                <li>
+                    <i class='bx bxl-twitter'></i>
+                    <span>Twitter</span>
+                </li>
+                <li>
+                    <i class='bx bxl-facebook'></i>
+                    <span>Facebook</span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
